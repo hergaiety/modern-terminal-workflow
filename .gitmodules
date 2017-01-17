@@ -1,0 +1,9 @@
+[submodule "iterm"]
+	path = iterm
+	url = https://github.com/dracula/iterm.git
+[submodule "iterm-dracula"]
+	path = iterm-dracula
+	url = https://github.com/dracula/iterm.git
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm.git
