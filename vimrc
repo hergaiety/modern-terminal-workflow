@@ -1,3 +1,4 @@
+set nomodeline
 set encoding=utf8
 
 " Stop word wrapping
@@ -37,14 +38,7 @@ set sidescrolloff=5
 set mouse=r
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-" Plugins with vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " Required
 Plug 'Shougo/unite.vim'
@@ -60,10 +54,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim', { 'on': 'CtrlP' }
 Plug 'mhinz/vim-grepper'
 Plug 'Shougo/vimfiler.vim', { 'on': 'VimFiler' }
-
-" Languages
-Plug 'pangloss/vim-javascript'
-Plug 'helino/vim-json'
 
 " Code Editing
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
