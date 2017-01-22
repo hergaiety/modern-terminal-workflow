@@ -62,6 +62,9 @@ Plug 'w0rp/ale'
 " Movement
 Plug 'justinmk/vim-sneak'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 
